@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "772869641847",
+    "firebase_url": "https://anotherdating-634f9.firebaseio.com",
+    "project_id": "anotherdating-634f9",
+    "storage_bucket": "anotherdating-634f9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:772869641847:android:c6865069669eb677",
+        "android_client_info": {
+          "package_name": "com.love.anotherdating"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "772869641847-tnf22uiqkjpkgso11qdqp8ugvm0sm5b2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCya09q2LNQLkSGCHdugvMnQnLaKo-QtqU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "772869641847-tnf22uiqkjpkgso11qdqp8ugvm0sm5b2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
