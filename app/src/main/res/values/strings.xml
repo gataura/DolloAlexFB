@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AnotherDating</string>
+    <string name="app_name">В знакомства</string>
     <string name="create_account">Create account</string>
     <string name="already_have_an_account">Already have an account</string>
     <string name="sign_in">Sign In</string>

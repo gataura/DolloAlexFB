@@ -132,7 +132,7 @@ class SplashActivity : BaseActivity() {
             Log.d("SplashActivityBadge", badgesNotSupportedException.message)
         }
 
-        val config = YandexMetricaConfig.newConfigBuilder("6e43103a-29f0-42b8-8264-3178b799e6b4").build()
+        val config = YandexMetricaConfig.newConfigBuilder("149ed795-fe3b-4426-beca-7b4947c1a707").build()
         YandexMetrica.activate(this, config)
         YandexMetrica.enableActivityAutoTracking(this.application)
 
