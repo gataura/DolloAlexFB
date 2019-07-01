@@ -1,4 +1,4 @@
-package com.dolllo.foryou.utils;
+package com.dollo.foryou.utils;
 
 import android.Manifest;
 import android.annotation.TargetApi;

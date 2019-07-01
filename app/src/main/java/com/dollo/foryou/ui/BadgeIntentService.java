@@ -1,4 +1,4 @@
-package com.dolllo.foryou.ui;
+package com.dollo.foryou.ui;
 
 import android.annotation.TargetApi;
 import android.app.IntentService;
@@ -8,12 +8,12 @@ import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
-import com.dolllo.foryou.R;
+import com.dollo.foryou.R;
 import me.leolin.shortcutbadger.ShortcutBadger;
 
 public class BadgeIntentService extends IntentService {
 
-    private static final String NOTIFICATION_CHANNEL = "com.dolllo.foryou";
+    private static final String NOTIFICATION_CHANNEL = "com.dollo.foryou";
 
     private int notId = 0;
 

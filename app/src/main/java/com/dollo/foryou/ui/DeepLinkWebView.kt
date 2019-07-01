@@ -1,4 +1,4 @@
-package com.dolllo.foryou.ui
+package com.dollo.foryou.ui
 
 
 
@@ -25,9 +25,9 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.ProgressBar
 import com.google.firebase.analytics.FirebaseAnalytics
-import com.dolllo.foryou.Conversion
-import com.dolllo.foryou.R
-import com.dolllo.foryou._core.BaseActivity
+import com.dollo.foryou.Conversion
+import com.dollo.foryou.R
+import com.dollo.foryou._core.BaseActivity
 import im.delight.android.webview.AdvancedWebView
 import kotlinx.android.synthetic.main.activity_web_view.*
 import java.io.File
@@ -60,7 +60,7 @@ class DeepLinkWebView : BaseActivity(), AdvancedWebView.Listener {
     override fun initUI() {
         webView = web_view
         progressBar = progress_bar
-        prefs = getSharedPreferences("com.dolllo.foryou", Context.MODE_PRIVATE)
+        prefs = getSharedPreferences("com.dollo.foryou", Context.MODE_PRIVATE)
         firebaseAnalytics = FirebaseAnalytics.getInstance(this)
     }
 

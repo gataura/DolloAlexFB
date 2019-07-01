@@ -1,4 +1,4 @@
-package com.dolllo.foryou
+package com.dollo.foryou
 
 import android.content.Context
 import android.content.Intent
@@ -21,11 +21,11 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var callbackManager: CallbackManager
 
-    var usEmail: String = "didn't get"
+    var userEmail: String = "didn't get"
     lateinit var prefs: SharedPreferences
 
-    lateinit var btnLogIn: Button
-    lateinit var btnRegistr: Button
+    lateinit var butnSignIn: Button
+    lateinit var butnReg: Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,22 +34,22 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         AppEventsLogger.activateApp(this)
-        facebookLogin = findViewById(R.id.facebook_login_btn)
+        facebookLogin = findViewById(R.id.facebook_login_button)
 
         facebookLogin.setReadPermissions("email")
         prefs = getSharedPreferences("com.love.anotherdating", Context.MODE_PRIVATE)
 
         callbackManager = CallbackManager.Factory.create()
 
-        btnLogIn = findViewById(R.id.signIn_btn)
-        btnRegistr = findViewById(R.id.sigUp_btn)
+        butnSignIn = findViewById(R.id.sign_in_button)
+        butnReg = findViewById(R.id.create_acc_button)
 
-        btnLogIn.setOnClickListener {
-            startActivity(Intent(this@MainActivity, LogInActivity::class.java))
+        butnSignIn.setOnClickListener {
+            startActivity(Intent(this@MainActivity, SignInActivity::class.java))
         }
 
-        btnRegistr.setOnClickListener {
-            startActivity(Intent(this@MainActivity, QuestionaireFirstActivity::class.java))
+        butnReg.setOnClickListener {
+            startActivity(Intent(this@MainActivity, QuestionActivity::class.java))
         }
 
         LoginManager.getInstance().logOut()
@@ -67,9 +67,9 @@ class MainActivity : AppCompatActivity() {
             override fun onSuccess(result: LoginResult) {
                 getUserEmail(AccessToken.getCurrentAccessToken())
                 if (isUserInDb()) {
-                    startActivity(Intent(this@MainActivity, UserProfileActivity::class.java))
+                    startActivity(Intent(this@MainActivity, UsProfileActivity::class.java))
                 } else {
-                    startActivity(Intent(this@MainActivity, QuestionaireFirstActivity::class.java))
+                    startActivity(Intent(this@MainActivity, QuestionActivity::class.java))
                 }
             }
 
@@ -90,7 +90,7 @@ class MainActivity : AppCompatActivity() {
             Log.v("MainActivity", response.toString())
 
             if (`object` != null) {
-                usEmail = `object`.getString("email")
+                userEmail = `object`.getString("email")
             }
         }
 

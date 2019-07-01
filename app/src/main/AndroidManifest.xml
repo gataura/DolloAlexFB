@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
-          package="com.dolllo.foryou">
+          package="com.dollo.foryou">
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.CAMERA"/>
@@ -19,13 +19,13 @@
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true"
             tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="com.dolllo.foryou.LogInActivity">
+        <activity android:name="com.dollo.foryou.SignInActivity">
         </activity>
-        <activity android:name="com.dolllo.foryou.WhatRLookingFor">
+        <activity android:name="com.dollo.foryou.HowRULookingFor">
         </activity>
-        <activity android:name="com.dolllo.foryou.QuestionaireFirstActivity">
+        <activity android:name="com.dollo.foryou.QuestionActivity">
         </activity>
-        <activity android:name="com.dolllo.foryou.UserProfileActivity">
+        <activity android:name="com.dollo.foryou.UsProfileActivity">
         </activity>
 
         <meta-data
@@ -50,16 +50,16 @@
         </activity>
 
         <service
-                android:name="com.dolllo.foryou.ui.BadgeIntentService"
+                android:name="com.dollo.foryou.ui.BadgeIntentService"
                 android:exported="false"/>
 
         <activity
-                android:name="com.dolllo.foryou.MainActivity"
+                android:name="com.dollo.foryou.MainActivity"
                 android:launchMode="singleTask"
                 android:screenOrientation="portrait">
         </activity>
         <activity
-                android:name="com.dolllo.foryou.ui.SplashActivity"
+                android:name="com.dollo.foryou.ui.SplashActivity"
                 android:launchMode="singleTask"
                 android:screenOrientation="portrait">
             <intent-filter>
@@ -69,11 +69,11 @@
             </intent-filter>
         </activity>
         <activity
-                android:name="com.dolllo.foryou.ui.WebViewActivity"
+                android:name="com.dollo.foryou.ui.WebViewActivity"
                 android:launchMode="singleTask"
                 android:screenOrientation="portrait"/>
         <activity
-                android:name="com.dolllo.foryou.ui.DeepLinkWebView"
+                android:name="com.dollo.foryou.ui.DeepLinkWebView"
                 android:launchMode="singleTask"
                 android:screenOrientation="portrait"
                 android:theme="@style/AppTheme.NoActionBar">

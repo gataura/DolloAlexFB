@@ -1,4 +1,4 @@
-package com.dolllo.foryou._core
+package com.dollo.foryou._core
 
 import android.os.Bundle
 import androidx.annotation.LayoutRes
@@ -11,8 +11,8 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig
 import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings
-import com.dolllo.foryou.BuildConfig
-import com.dolllo.foryou.R
+import com.dollo.foryou.BuildConfig
+import com.dollo.foryou.R
 
 
 /**

@@ -1,4 +1,4 @@
-package com.dolllo.foryou
+package com.dollo.foryou
 
 import com.google.firebase.database.IgnoreExtraProperties
 import com.google.firebase.database.PropertyName

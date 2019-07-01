@@ -1,4 +1,4 @@
-package com.dolllo.foryou.ui
+package com.dollo.foryou.ui
 
 import android.annotation.SuppressLint
 import android.annotation.TargetApi
@@ -16,9 +16,9 @@ import android.view.View
 import android.webkit.*
 import android.widget.ProgressBar
 import androidx.core.app.ActivityCompat
-import com.dolllo.foryou.EXTRA_TASK_URL
-import com.dolllo.foryou.R
-import com.dolllo.foryou._core.BaseActivity
+import com.dollo.foryou.EXTRA_TASK_URL
+import com.dollo.foryou.R
+import com.dollo.foryou._core.BaseActivity
 import im.delight.android.webview.AdvancedWebView
 import kotlinx.android.synthetic.main.activity_web_view.*
 import java.io.File

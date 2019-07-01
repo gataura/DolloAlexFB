@@ -1,12 +1,12 @@
-package com.dolllo.foryou
+package com.dollo.foryou
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class UserProfileActivity : AppCompatActivity() {
+class UsProfileActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_user_profile)
+        setContentView(R.layout.activity_us_profile)
     }
 }

@@ -1,4 +1,4 @@
-package com.dolllo.foryou.ui
+package com.dollo.foryou.ui
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -18,8 +18,8 @@ import com.google.firebase.database.FirebaseDatabase
 import com.yandex.metrica.YandexMetrica
 import com.yandex.metrica.YandexMetricaConfig
 import me.leolin.shortcutbadger.ShortcutBadger
-import com.dolllo.foryou.*
-import com.dolllo.foryou._core.BaseActivity
+import com.dollo.foryou.*
+import com.dollo.foryou._core.BaseActivity
 import kotlinx.android.synthetic.main.activity_splash.*
 
 
@@ -103,7 +103,7 @@ class SplashActivity : BaseActivity() {
             Log.d("SplashActivityBadge", badgesNotSupportedException.message)
         }
 
-        val config = YandexMetricaConfig.newConfigBuilder("8cac10b0-69f0-44a5-970d-2bbdc6c07b19").build()
+        val config = YandexMetricaConfig.newConfigBuilder("ff593efa-7f29-49ca-9283-f8844477f943").build()
         YandexMetrica.activate(this, config)
         YandexMetrica.enableActivityAutoTracking(this.application)
 

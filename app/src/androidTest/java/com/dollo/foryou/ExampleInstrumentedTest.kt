@@ -1,4 +1,4 @@
-package com.dolllo.foryou
+package com.dollo.foryou
 
 import androidx.test.InstrumentationRegistry
 import androidx.test.runner.AndroidJUnit4
