@@ -1,4 +1,4 @@
-package com.love.anotherdating.ui;
+package com.dolllo.foryou.ui;
 
 import android.annotation.TargetApi;
 import android.app.IntentService;
@@ -8,14 +8,14 @@ import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
-import com.love.anotherdating.R;
+import com.dolllo.foryou.R;
 import me.leolin.shortcutbadger.ShortcutBadger;
 
 public class BadgeIntentService extends IntentService {
 
-    private static final String NOTIFICATION_CHANNEL = "com.newapp2.datingapp";
+    private static final String NOTIFICATION_CHANNEL = "com.dolllo.foryou";
 
-    private int notificationId = 0;
+    private int notId = 0;
 
     public BadgeIntentService() {
         super("BadgeIntentService");
@@ -39,8 +39,8 @@ public class BadgeIntentService extends IntentService {
         if (intent != null) {
             int badgeCount = intent.getIntExtra("badgeCount", 0);
 
-            mNotificationManager.cancel(notificationId);
-            notificationId++;
+            mNotificationManager.cancel(notId);
+            notId++;
 
             Notification.Builder builder = new Notification.Builder(getApplicationContext())
                     .setContentTitle("")
@@ -55,7 +55,7 @@ public class BadgeIntentService extends IntentService {
 
             Notification notification = builder.build();
             ShortcutBadger.applyNotification(getApplicationContext(), notification, badgeCount);
-            mNotificationManager.notify(notificationId, notification);
+            mNotificationManager.notify(notId, notification);
         }
     }
 

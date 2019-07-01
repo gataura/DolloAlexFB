@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "772869641847",
-    "firebase_url": "https://anotherdating-634f9.firebaseio.com",
-    "project_id": "anotherdating-634f9",
-    "storage_bucket": "anotherdating-634f9.appspot.com"
+    "project_number": "744775690400",
+    "firebase_url": "https://dollloalexfb.firebaseio.com",
+    "project_id": "dollloalexfb",
+    "storage_bucket": "dollloalexfb.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:772869641847:android:c6865069669eb677",
+        "mobilesdk_app_id": "1:744775690400:android:da414bec90cd80e0",
         "android_client_info": {
-          "package_name": "com.love.anotherdating"
+          "package_name": "com.dolllo.foryou"
         }
       },
       "oauth_client": [
         {
-          "client_id": "772869641847-tnf22uiqkjpkgso11qdqp8ugvm0sm5b2.apps.googleusercontent.com",
+          "client_id": "744775690400-oc7n2ugie2sd27d4hq6ugfm62ndb2b3t.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCya09q2LNQLkSGCHdugvMnQnLaKo-QtqU"
+          "current_key": "AIzaSyD_o5w9OUGrcOvri0dUkh4i0crOOVXQeZU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "772869641847-tnf22uiqkjpkgso11qdqp8ugvm0sm5b2.apps.googleusercontent.com",
+              "client_id": "744775690400-oc7n2ugie2sd27d4hq6ugfm62ndb2b3t.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

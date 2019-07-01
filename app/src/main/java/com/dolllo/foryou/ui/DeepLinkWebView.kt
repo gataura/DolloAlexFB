@@ -1,4 +1,4 @@
-package com.love.anotherdating.ui
+package com.dolllo.foryou.ui
 
 
 
@@ -25,9 +25,9 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.ProgressBar
 import com.google.firebase.analytics.FirebaseAnalytics
-import com.love.anotherdating.Conversion
-import com.love.anotherdating.R
-import com.love.anotherdating._core.BaseActivity
+import com.dolllo.foryou.Conversion
+import com.dolllo.foryou.R
+import com.dolllo.foryou._core.BaseActivity
 import im.delight.android.webview.AdvancedWebView
 import kotlinx.android.synthetic.main.activity_web_view.*
 import java.io.File
@@ -47,7 +47,7 @@ class DeepLinkWebView : BaseActivity(), AdvancedWebView.Listener {
     var mFilePathCallback: ValueCallback<Array<Uri>>? = null
     val FILECHOOSER_RESULTCODE = 1
     var mCameraPhotoPath: String? = null
-    val PERMISSION_CODE = 1000
+    val PERM_CODE = 1000
     var size: Long = 0
     lateinit var firebaseAnalytics: FirebaseAnalytics
     lateinit var prefs: SharedPreferences
@@ -60,7 +60,7 @@ class DeepLinkWebView : BaseActivity(), AdvancedWebView.Listener {
     override fun initUI() {
         webView = web_view
         progressBar = progress_bar
-        prefs = getSharedPreferences("com.dating.relations", Context.MODE_PRIVATE)
+        prefs = getSharedPreferences("com.dolllo.foryou", Context.MODE_PRIVATE)
         firebaseAnalytics = FirebaseAnalytics.getInstance(this)
     }
 
@@ -110,7 +110,7 @@ class DeepLinkWebView : BaseActivity(), AdvancedWebView.Listener {
             android.Manifest.permission.READ_EXTERNAL_STORAGE
         )
         if (writePermission != PackageManager.PERMISSION_GRANTED || readPermission != PackageManager.PERMISSION_GRANTED || cameraPermission != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(activity, permission, PERMISSION_CODE)
+            ActivityCompat.requestPermissions(activity, permission, PERM_CODE)
         }
 
     }

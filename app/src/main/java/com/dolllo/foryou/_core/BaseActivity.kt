@@ -1,4 +1,4 @@
-package com.love.anotherdating._core
+package com.dolllo.foryou._core
 
 import android.os.Bundle
 import androidx.annotation.LayoutRes
@@ -11,8 +11,8 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig
 import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings
-import com.love.anotherdating.BuildConfig
-import com.love.anotherdating.R
+import com.dolllo.foryou.BuildConfig
+import com.dolllo.foryou.R
 
 
 /**
@@ -84,15 +84,6 @@ abstract class BaseActivity : AppCompatActivity() {
     /**
      * method logs event(firebase and facebook analytics)
      */
-    fun logEvent(event: String, bundle: Bundle? = null) {
-        if (bundle != null) {
-            appEventsLogger.logEvent(event, bundle)
-            firebaseAnalytics.logEvent(event, bundle)
-        } else {
-            appEventsLogger.logEvent(event, null)
-            firebaseAnalytics.logEvent(event, null)
-        }
-    }
 
     fun logEvent(event: String) {
         appEventsLogger.logEvent(event)

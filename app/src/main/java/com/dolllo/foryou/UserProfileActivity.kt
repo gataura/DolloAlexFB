@@ -1,12 +1,12 @@
-package com.love.anotherdating
+package com.dolllo.foryou
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class ProfileActivity : AppCompatActivity() {
+class UserProfileActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_profile)
+        setContentView(R.layout.activity_user_profile)
     }
 }

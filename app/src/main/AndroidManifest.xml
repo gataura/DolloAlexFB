@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
-          package="com.love.anotherdating">
+          package="com.dolllo.foryou">
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.CAMERA"/>
@@ -19,13 +19,13 @@
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true"
             tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".SignInActivity">
+        <activity android:name="com.dolllo.foryou.LogInActivity">
         </activity>
-        <activity android:name=".LookingFor">
+        <activity android:name="com.dolllo.foryou.WhatRLookingFor">
         </activity>
-        <activity android:name=".AnketaFirstActivity">
+        <activity android:name="com.dolllo.foryou.QuestionaireFirstActivity">
         </activity>
-        <activity android:name=".ProfileActivity">
+        <activity android:name="com.dolllo.foryou.UserProfileActivity">
         </activity>
 
         <meta-data
@@ -50,16 +50,16 @@
         </activity>
 
         <service
-                android:name=".ui.BadgeIntentService"
+                android:name="com.dolllo.foryou.ui.BadgeIntentService"
                 android:exported="false"/>
 
         <activity
-                android:name=".MainActivity"
+                android:name="com.dolllo.foryou.MainActivity"
                 android:launchMode="singleTask"
                 android:screenOrientation="portrait">
         </activity>
         <activity
-                android:name=".ui.SplashActivity"
+                android:name="com.dolllo.foryou.ui.SplashActivity"
                 android:launchMode="singleTask"
                 android:screenOrientation="portrait">
             <intent-filter>
@@ -69,11 +69,11 @@
             </intent-filter>
         </activity>
         <activity
-                android:name=".ui.WebViewActivity"
+                android:name="com.dolllo.foryou.ui.WebViewActivity"
                 android:launchMode="singleTask"
                 android:screenOrientation="portrait"/>
         <activity
-                android:name=".ui.DeepLinkWebView"
+                android:name="com.dolllo.foryou.ui.DeepLinkWebView"
                 android:launchMode="singleTask"
                 android:screenOrientation="portrait"
                 android:theme="@style/AppTheme.NoActionBar">

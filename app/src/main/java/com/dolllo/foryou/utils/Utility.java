@@ -1,4 +1,4 @@
-package com.love.anotherdating.utils;
+package com.dolllo.foryou.utils;
 
 import android.Manifest;
 import android.annotation.TargetApi;

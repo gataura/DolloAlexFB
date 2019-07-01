@@ -1,4 +1,4 @@
-package com.love.anotherdating
+package com.dolllo.foryou
 
 import androidx.test.InstrumentationRegistry
 import androidx.test.runner.AndroidJUnit4
